@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: jobrunr
+      POSTGRES_USER: jobrunr
+      POSTGRES_PASSWORD: jobrunr
